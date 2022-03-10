@@ -4,6 +4,19 @@
 <head>
 <title>Hello!</title>
   <style>
+  
+  h1 {
+  color: blue;
+  }
+  
+  h2 {
+  color: pink;
+  }
+  
+  p {
+  color: orange;
+  }
+  
         table {
             border: 1px solid black;
             border-collapse: collapse;
@@ -14,11 +27,53 @@
             border: 1px solid black;
             padding: 5px;
         }
+        
+              #container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        #container>div {
+            background-color: springgreen;
+            font-size: 20px;
+            margin: 20px;
+            padding: 20px;
+            width: 200px;
+        }
+        
+               #grid {
+            background-color: green;
+            display: grid;
+            padding: 20px;
+            grid-column-gap: 20px;
+            grid-row-gap: 10px;
+            grid-template-columns: 200px 200px auto;
+        }
+        
+        .grid-item {
+            background-color: white;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+             button {
+            width: 200px;
+            height: 50px;
+            font-size: 24px;
+            background-color: aquamarine;
+        }
+        
+        button:hover {
+            background-color: orange;
+        }
     </style>
 </head>
 
 <body>
+
 <h1>Hello, World!</h1>
+<br>
 <h2>PLANET EARTH</h2>
 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui odit nesciunt, consequatur, error enim, vero quis consectetur sunt reiciendis ea suscipit harum cumque nemo deserunt corporis molestiae aliquam officia rerum!</p>
 <br>
@@ -27,6 +82,26 @@
 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla praesentium sapiente eaque error alias. Aliquam!</p>
 <br>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quaerat voluptatem nisi, adipisci repellat, obcaecati sequi nulla porro debitis dolor beatae magnam soluta reprehenderit sunt architecto consequatur! Unde, laboriosam enim. Sunt labore aspernatur consectetur maiores deleniti voluptatum illo nisi itaque.</p>
+<br>
+    <div>
+        <input type="" name="country" list="countries" placeholder="On which Continent do you live?">
+        <datalist id="countries">
+<option value="Africa">
+<option value="Asia">
+<option value="Europe">
+<option value="South America">
+<option value="North America">
+<option value="Antarctica">
+<option value="Australia">
+</option>
+</option>
+</option>
+</option>
+</option>
+</option>
+</option>
+        </datalist>
+    </div>
 <br>
 <h2>EARTH'S OCEANS</>
   <table>
@@ -51,6 +126,43 @@
             </tr>
         </tbody>
     </table>
+    
+      <div>
+        Favourite Ocean?
+        <input type="radio" value="Atlantic" name="ocean">Atlantic
+        <input type="radio" value="Pacific" name="ocean">Pacific
+        <input type="radio" value="Arctic" name="ocean">Arctic
+        <input type="radio" value="Indian" name="ocean">Indian
+        <input type="radio" value="Southern" name="ocean">Southern
+    </div>
+    <br>
+    
+        <div id="container">
+        <div>1. Atlantic Ocean</div>
+        <div>2. Pacific Ocean</div>
+        <div>3. Arctic Ocean</div>
+        <div>4. Indian Ocean</div>
+        <div>5. Southern Ocean</div>
+        
+    </div>
+    
+        <div id="grid">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
+        <div class="grid-item">11</div>
+        <div class="grid-item">12</div>
+    </div>
+    
+    <button>Click Me</button>
+    
 </body>
 
 </html>
